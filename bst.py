@@ -7,6 +7,7 @@ sys.setrecursionlimit(10**6)
 
 BinTree : TypeAlias = Union[None, "BTNode"]
 
+@dataclass(frozen=True)
 class BTNode:
     value: Any
     rest: BinTree
